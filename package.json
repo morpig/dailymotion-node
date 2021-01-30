@@ -1,0 +1,24 @@
+{
+  "name": "dailymotion-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morpig/dailymotion-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morpig/dailymotion-node/issues"
+  },
+  "homepage": "https://github.com/morpig/dailymotion-node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "superagent": "^6.1.0",
+    "youtube-dl": "^3.1.0"
+  }
+}
