@@ -4,12 +4,6 @@ const youtubedl = require('youtube-dl')
 
 const app = express()
 
-let link = {};
-
-function fetchChannel() {
-
-}
-
 app.get("/dailymotion/:id", (req, res) => {
     const url = 'https://www.dailymotion.com/embed/video/' + req.params.id
     youtubedl.getInfo(url, function(err, info) {
