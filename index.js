@@ -6,7 +6,7 @@ const app = express()
 
 app.get("/dailymotion/:id", (req, res) => {
     const url = 'https://www.dailymotion.com/embed/video/' + req.params.id
-    youtubedl.getInfo(url, ['--add-header', 'https://www.xtra.com.my/'], function(err, info) {
+    youtubedl.getInfo(url, ['--add-header', 'Referer: https://www.xtra.com.my/'], function(err, info) {
       if (err) {
           res.status(500).send(err)
           console.log(`${new Date()}: failed fetched ${req.params.id}`)
